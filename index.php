@@ -6,7 +6,7 @@ if ( have_posts() ):
         the_post();
 ?>
     <article>
-        <h1><a href="<?= get_permalink(); ?>"><?php the_title(); ?></a></h1>
+        <h2><a href="<?= get_permalink(); ?>"><?php the_title(); ?></a></h2>
         <div><?php the_time( get_option( 'date_format' ) ); ?></div>
 <?php
         if ( has_post_thumbnail() ):
