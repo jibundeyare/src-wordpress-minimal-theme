@@ -2,10 +2,10 @@
 get_header();
 
 ?>
-    <article>
+    <div>
         <h1>404 Not found</h1>
         <div>Désolé :(</div>
-    </article>
+    </div>
 <?php
 
 get_footer();
