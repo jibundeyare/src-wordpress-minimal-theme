@@ -79,3 +79,21 @@ add_theme_support( 'title-tag' );
 // activation de la fonctionnalité des vignettes
 add_theme_support( 'post-thumbnails' );
 
+/**
+ * résumés (excerpts)
+ */
+
+// cette fonction définit le nombre de mot maximal à afficher dans la résumé d'un article
+function my_theme_excerpt_length( $length ) {
+    // maximum de mots
+    return 20;
+}
+add_filter( 'excerpt_length', 'my_theme_excerpt_length', 999 );
+
+// cette fonction définit la chaîne de caractères qui est affiché quand le résumé d'un article est tronqué
+function my_theme_excerpt_more( $more ) {
+    // chaîne de caractères à afficher après un résumé tronqué
+    return '&hellip;';
+}
+add_filter( 'excerpt_more', 'my_theme_excerpt_more' );
+
