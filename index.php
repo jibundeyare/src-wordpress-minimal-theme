@@ -13,7 +13,7 @@ if ( have_posts() ):
             the_post_thumbnail( 'thumbnail' );
         endif;
 ?>
-        <div><?php echo wp_trim_excerpt(); ?></div>
+        <div><?= wp_trim_excerpt(); ?></div>
     </article>
 <?php
     endwhile;
